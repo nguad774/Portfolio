@@ -1,0 +1,224 @@
+/*CSS for all pages*/
+body {
+  background: #DADED4;
+}
+
+h1, h2, h3, p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+  margin: 10px 0;
+}
+
+strong{
+  font-weight: 900;
+}
+
+/*navigation bar for all three pages*/
+#main-navbar {
+  font-family: 'Lilita One', cursive;
+  font-size: 20px;
+  background-color: #4D774E;
+  overflow: hidden;
+  width: 100%;
+}
+#navbar-container {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+#main-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  float: left;
+}
+#main-navbar ul li {
+  float: left;
+  position: relative;
+  right: 50%;
+  display: block;
+}
+#main-navbar ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+li{
+  line-height: 1.5;
+}
+
+#main-navbar ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #9DC88D;
+  text-decoration-thickness: 3px;
+  text-underline-position: under;
+}
+#onpage {
+  background-color: #9DC88D;
+}
+
+
+
+/*CSS for page 3*/
+#page3-h1{
+  float: left;
+  padding: 0 0 0 15px;
+  width: 375px;
+  font-family: 'Roboto';
+  font-size: 50px;
+}
+
+.page3-h2{
+  float: left;
+  padding: 0 0 0 15px;
+}
+
+#pg3{
+  float: left;
+  width: 15em;
+}
+
+#main-fluid {
+	float: left;
+	width: 90%;
+	margin: 5% 5% 5% 5%;
+}
+   
+#column1-fluid {
+  clear: both;
+	float: left;
+	width: 43%;
+	margin: 0 2% 5% 5%;
+}
+#column2-fluid {
+	float: left;
+	width: 43%;
+	margin: 0 5% 5% 2%;
+}
+
+table{
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+td, th {
+	border: 1px solid;
+  text-align: center;
+  }
+
+table th{
+  padding: 10px;
+  background-color: #9DC88D;
+  border: 0px;
+}
+
+table td{
+  padding: 8px;
+}
+
+.row1{
+  background-color: #F8F8F8;
+} 
+
+.row2{
+  background-color: #68B187;
+}
+
+tr:hover td{
+  background-color: #FFF1CB;
+} 
+
+#i-div {
+  clear: both;
+  position: relative;
+  padding-bottom: 56.25%; /* this is 16:9 aspect ratio */
+  height: 0;
+  
+}
+    
+#video1 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#page3-h2{
+  display: none;
+}
+
+footer{
+  clear: both;
+  background-color: #4D774E;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+	body {
+		background-color: #CCC;
+  }
+  
+  #page3-h1{
+  font-family: 'Great Vibes', cursive;
+  font-size: 15px;
+  color: #996b09;
+  }
+
+  .page3-h2{
+    font-size: 10px;
+    color: #996b09;
+  }
+  
+  #pg3{
+  width: 7em;
+  }
+  
+  td, th {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+	body {
+		background-color: black;
+  }
+  
+  #video1{
+    display: block;
+  }
+  
+  #main-fluid {
+    display: none;
+  }
+   
+  #column1-fluid {
+    display: none;
+  }
+  #column2-fluid {
+    display: none;
+  }
+  
+  #page3-h2{
+    color: white;
+    display: block;
+    float: left;
+    padding: 15px;
+    text-align: center;
+  }
+  
+}
+

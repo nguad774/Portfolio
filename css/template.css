@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Benton-Book,Arial,Sans-Serif;
+  padding: 0p;
+  background: white;
+}
+.wrapper {
+	  padding-right: 10%;
+    padding-left: 10%;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #002349;
+  border-bottom: 10px solid #957C3D;
+  width: 100%;
+}
+
+.header h1 {
+	font-family: FreightBig,Serif,Arial,Sans-Serif;
+  font-size: 35px;
+	color: white;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  margin: 0;
+  overflow: hidden;
+  background-color: #001731;
+  width: 100%;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+	text-decoration: underline;
+  text-decoration-color: #957C3D;
+  text-decoration-thickness: 3px;
+  text-underline-position: under;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 30px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+	font-family: FreightBig,Serif,Arial,Sans-Serif;
+  padding: 20px;
+  text-align: center;
+  background-color: #002349;
+  margin-top: 20px;
+	color: white;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
